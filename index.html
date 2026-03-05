@@ -6,171 +6,7 @@
 
 <title>Día Internacional de la Mujer</title>
 
-<style>
-
-/* ===== GENERAL ===== */
-
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f4f4;
-    display:flex;
-    flex-direction:column;
-    min-height:100vh;
-}
-
-/* ===== HEADER ===== */
-
-header{
-    background:#7a003c;
-    color:white;
-    padding:20px;
-}
-
-.encabezado{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    text-align:center;
-}
-
-.logo{
-    height:120px;
-}
-
-.titulos h1,
-.titulos h2,
-.titulos p{
-    margin:5px 0;
-}
-
-/* ===== CONTENIDO ===== */
-
-main{
-    flex:1;
-    background-color: #7a003c;
-}
-
-.contenedor{
-    display:flex;
-    justify-content:center;
-    align-items:stretch;
-    gap:20px;
-    padding:20px;
-    flex-wrap:wrap;
-}
-
-/* ===== TARJETA ===== */
-
-.card{
-    background:white;
-    border-radius:10px;
-    padding:20px;
-    width:420px;
-    text-align:center;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-    display:flex;
-    flex-direction:column;
-}
-
-.card img{
-    width:100%;
-    height:420px;
-    object-fit:contain;      /* evita recorte */
-    background:#f2f2f2;
-    border-radius:10px;
-}
-
-/* ===== BOTONES ===== */
-
-.botones{
-    margin-top:15px;
-}
-
-button{
-    padding:12px 18px;
-    margin:5px;
-    font-size:16px;
-    border:none;
-    border-radius:5px;
-    background:#7a003c;
-    color:white;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#a00050;
-}
-
-/* ===== PANEL ALUMNOS ===== */
-
-.alumnos{
-    background:white;
-    border-radius:10px;
-    padding:20px;
-    width:320px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-}
-
-.alumnos h3{
-    text-align:center;
-    color:#7a003c;
-    letter-spacing:1px;
-}
-
-.alumnos ul{
-    list-style:none;
-    padding:0;
-    margin:0;
-    flex-grow:1;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly; /* llena verticalmente */
-}
-
-.alumnos li{
-    padding:4px 0;
-    border-bottom:1px solid #eee;
-}
-
-/* ===== FOOTER ===== */
-
-footer{
-    background:#7a003c;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-
-/* ===== RESPONSIVE ===== */
-
-@media (max-width:768px){
-
-.contenedor{
-    flex-direction:column;
-    align-items:center;
-}
-
-.card,
-.alumnos{
-    width:90%;
-}
-
-button{
-    width:100%;
-    font-size:18px;
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -219,23 +55,26 @@ Homenaje lunes 09 marzo 2026 — Licenciatura en Enseñanza y Aprendizaje de las
 <!-- PANEL ALUMNOS -->
 <div class="alumnos">
 
-<h3>Alumnos</h3>
+<h3>Alumnos Participantes</h3>
 
+<h4>Maestros de Ceremonias:</h3>
 <ul>
-<li>Caro Barron José Manuel</li>
-<li>Cota Zazueta Jassiel Gilberto</li>
-<li>Escarrega Gil Ninfa Lynneth</li>
-<li>Garcia López Misael</li>
-<li>González Rodríguez Frida Alejandra</li>
-<li>Gutiérrez Velarde Mayte Maclovia</li>
-<li>Jiménez López Karla Daniela</li>
-<li>López Pereda José Ricardo</li>
-<li>Luna Grave Dennys Eduardo</li>
-<li>Medina Valenzuela Juan Ángel</li>
-<li>Munguía Zambada Héctor Lenny</li>
-<li>Robles Espinoza Christopher</li>
-<li>Sánchez García Nicole Yuckye</li>
-<li>Sánchez Germán Emma Sofia</li>
+    <li>Sánchez García Nicole Yuckye</li>
+    <li>Caro Barron José Manuel</li>
+</ul>
+<h4>Caracterización 5 Mujeres que cambiaron la historia:</h3>
+<ul>
+    <hr>
+    <li>Sor Juana Inés de la Cruz - Sánchez Germán Emma Sofia</li>
+    <hr>
+    <li>Leona Vicario - Jiménez López Karla Daniela</li>
+    <hr>
+    <li>Elvia Carrillo Puerto - Gutiérrez Velarde Mayte Maclovia</li>
+    <hr>
+    <li>Frida Kahlo - González Rodríguez Frida Alejandra</li>
+    <hr>
+    <li>Rosario Castellanos - Escarrega Gil Ninfa Lynneth </li>
+    <hr>
 </ul>
 
 <h3>Asesor</h3>
@@ -251,65 +90,7 @@ Homenaje lunes 09 marzo 2026 — Licenciatura en Enseñanza y Aprendizaje de las
 Formación Docente • Igualdad • Educación • Justicia Social
 </footer>
 
-<script>
-
-const mujeres = [
-
-{
-nombre:"Sor Juana Inés de la Cruz",
-foto:"imagenes/sor-juana-ines.png",
-descripcion:"Poeta, filósofa y defensora del derecho de las mujeres a la educación."
-},
-
-{
-nombre:"Leona Vicario",
-foto:"imagenes/leona-vicario.png",
-descripcion:"Heroína de la Independencia de México y símbolo de compromiso patriótico."
-},
-
-{
-nombre:"Elvia Carrillo Puerto",
-foto:"imagenes/elvia-carrillo.png",
-descripcion:"Pionera del feminismo mexicano y promotora del voto femenino."
-},
-
-{
-nombre:"Frida Kahlo",
-foto:"imagenes/frida-kahlo.png",
-descripcion:"Artista mexicana universal cuya obra representa identidad y resiliencia."
-},
-
-{
-nombre:"Rosario Castellanos",
-foto:"imagenes/rosario-castellanos.png",
-descripcion:"Escritora y diplomática comprometida con la igualdad y la justicia social."
-}
-
-];
-
-let indice = 0;
-
-function mostrar(){
-document.getElementById("nombre").innerText = mujeres[indice].nombre;
-document.getElementById("foto").src = mujeres[indice].foto;
-document.getElementById("descripcion").innerText = mujeres[indice].descripcion;
-}
-
-function siguiente(){
-indice++;
-if(indice>=mujeres.length) indice=0;
-mostrar();
-}
-
-function anterior(){
-indice--;
-if(indice<0) indice=mujeres.length-1;
-mostrar();
-}
-
-mostrar();
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
