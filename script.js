@@ -3,30 +3,45 @@ const mujeres = [
         nombre: "Sor Juana Inés de la Cruz",
         foto: "imagenes/sor-juana-ines.png",
         descripcion: "Poeta, filósofa y defensora del derecho de las mujeres a la educación.",
+        nacimiento: "12 de noviembre de 1648",
+        lugar: "San Miguel Nepantla, México",
+        fallecimiento: "17 de abril de 1695",
         representante: "Sánchez Germán Emma Sofia"
     },
     {
         nombre: "Leona Vicario",
         foto: "imagenes/leona-vicario.png",
         descripcion: "Heroína de la Independencia de México y símbolo de compromiso patriótico.",
+        nacimiento: "10 de abril de 1789",
+        lugar: "Ciudad de México",
+        fallecimiento: "21 de agosto de 1842",
         representante: "Jiménez López Karla Daniela"
     },
     {
         nombre: "Elvia Carrillo Puerto",
         foto: "imagenes/elvia-carrillo.png",
         descripcion: "Pionera del feminismo mexicano y promotora del voto femenino.",
+        nacimiento: "30 de enero de 1881",
+        lugar: "Motul, Yucatán",
+        fallecimiento: "18 de abril de 1965",
         representante: "Gutiérrez Velarde Mayte Maclovia"
     },
     {
         nombre: "Frida Kahlo",
         foto: "imagenes/frida-kahlo.png",
         descripcion: "Artista mexicana universal cuya obra representa identidad y resiliencia.",
+        nacimiento: "6 de julio de 1907",
+        lugar: "Coyoacán, Ciudad de México",
+        fallecimiento: "13 de julio de 1954",
         representante: "González Rodríguez Frida Alejandra"
     },
     {
         nombre: "Rosario Castellanos",
         foto: "imagenes/rosario-castellanos.png",
         descripcion: "Escritora y diplomática comprometida con la igualdad y la justicia social.",
+        nacimiento: "25 de mayo de 1925",
+        lugar: "Ciudad de México",
+        fallecimiento: "7 de agosto de 1974",
         representante: "Escarrega Gil Ninfa Lynneth"
     }
 ];
@@ -38,6 +53,9 @@ function mostrar(){
     document.getElementById("nombre").innerText = m.nombre;
     document.getElementById("foto").src = m.foto;
     document.getElementById("descripcion").innerText = m.descripcion;
+    document.getElementById("nacimiento").innerText = m.nacimiento;
+    document.getElementById("lugar").innerText = m.lugar;
+    document.getElementById("fallecimiento").innerText = m.fallecimiento;
     document.getElementById("representante").innerText = m.representante;
 }
 
