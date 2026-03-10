@@ -64,4 +64,21 @@ function showSection(sectionId) {
 window.onload = function() {
     lucide.createIcons();
     mostrar();
+    // Asignar event listeners a las imágenes del collage
+    document.querySelectorAll('.collage img').forEach(img => {
+        img.addEventListener('click', function() {
+            abrirLightbox(this.src);
+        });
+    });
 };
+
+function abrirLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightbox.style.display = 'flex';
+    lightboxImg.src = src;
+}
+
+function cerrarLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}

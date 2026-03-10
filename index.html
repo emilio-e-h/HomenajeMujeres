@@ -52,6 +52,28 @@
                     Explorar Biografías <i data-lucide="chevron-right"></i>
                 </button>
             </div>
+
+            <!-- COLLAGE DE FOTOS DEL EVENTO -->
+            <div class="collage-container">
+                <h2 style="color: var(--guinda); text-align: center; margin: 40px 0 20px;">Galería del Evento</h2>
+                <div class="collage">
+                    <img src="fotos/foto-1.jpg" alt="Foto del evento 1">
+                    <img src="fotos/foto-2.jpg" alt="Foto del evento 2">
+                    <img src="fotos/foto-3.jpg" alt="Foto del evento 3">
+                    <img src="fotos/foto-4.jpg" alt="Foto del evento 4">
+                    <img src="fotos/foto-5.jpg" alt="Foto del evento 5">
+                    <img src="fotos/foto-6.jpg" alt="Foto del evento 6">
+                    <img src="fotos/foto-7.jpg" alt="Foto del evento 7">
+                    <img src="fotos/foto-8.jpg" alt="Foto del evento 8">
+                    <img src="fotos/foto-9.jpg" alt="Foto del evento 9">
+                    <img src="fotos/foto-10.jpg" alt="Foto del evento 10">
+                    <img src="fotos/foto-11.jpg" alt="Foto del evento 11">
+                    <img src="fotos/foto-12.jpg" alt="Foto del evento 12">
+                    <img src="fotos/foto-13.jpg" alt="Foto del evento 13">
+                    <img src="fotos/foto-14.jpg" alt="Foto del evento 14">
+                    <img src="fotos/foto-15.jpg" alt="Foto del evento 15">
+                </div>
+            </div>
         </section>
 
         <!-- SECCIÓN COMBINADA (BIOGRAFÍAS + ROLES) -->
@@ -256,6 +278,12 @@
     <footer>
         <p>© Todos los derechos reservados • Mtro. Emilio Escalante Hernández • Marzo 2026</p>
     </footer>
+
+    <!-- MODAL PARA AMPLIAR FOTOS -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="cerrarLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
 
     <script src="script.js"></script>
 </body>
