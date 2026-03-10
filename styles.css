@@ -109,9 +109,18 @@ main {
 
 .collage {
     display: grid;
+    /* por defecto se adapta, pero en pantallas anchas siempre queremos 5 columnas */
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     justify-items: center;
+}
+
+/* forzar 5 elementos por fila en escritorio para evitar que se apilen verticalmente
+   si el contenedor se estrecha en el servidor o el CSS no se carga correctamente */
+@media (min-width: 900px) {
+    .collage {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 .collage img {
